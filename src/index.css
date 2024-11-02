@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Use system fonts as fallback for custom fonts */
+@layer base {
+  body {
+    @apply font-poppins text-gray-800 bg-gray-50;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-poppins font-bold;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#0387fe] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#182f4f] transition-colors duration-300;
+  }
+
+  .btn-secondary {
+    @apply bg-[#5878af] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#182f4f] transition-colors duration-300;
+  }
+
+  .nav-link {
+    @apply text-[#182f4f] hover:text-[#0387fe] transition-colors duration-300;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-6;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #0387fe !important;
+}
